@@ -1,154 +1,138 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8" />
+  <title>One Honest Question</title>
+
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #cfd9df, #e2ebf0);
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .box {
+      background: white;
+      padding: 40px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      width: 360px;
+    }
+
+    h1 {
+      color: #444;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    p {
+      color: #666;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 17px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    #yes {
+      background-color: #4caf50;
+      color: white;
+      margin-right: 20px;
+    }
+
+    #no {
+      background-color: #aaa;
+      position: absolute;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      position: relative;
+      height: 140px;
+    }
+
+    #message {
+      margin-top: 18px;
+      color: #555;
+      font-style: italic;
+      min-height: 22px;
+    }
   </style>
 </head>
+
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;One Honest Question&lt;/title&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 100vh;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: flex;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>justify-content: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>align-items: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: linear-gradient(135deg, #cfd9df, #e2ebf0);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: Arial, sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.box {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 10px 25px rgba(0,0,0,0.15);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 360px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #444;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>p {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #666;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>button {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 12px 24px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 17px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>cursor: pointer;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>#yes {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #4caf50;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-right: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>#no {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background-color: #aaa;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>position: absolute;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>.buttons {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 140px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>#message {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 18px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #555;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-style: italic;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>min-height: 22px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Hey.&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>I know things didn’t end well.&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>I’m not here to force anything.&lt;br&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>I just wanted to ask honestly…</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h2&gt;Can we be friends again? 🌱&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="buttons"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button id="yes" onclick="yesClicked()"&gt;Yes&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button id="no"&gt;No&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="message"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const noBtn = document.getElementById("no");</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const msg = document.getElementById("message");</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>const messages = [</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"It’s okay. I understand.",</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"No pressure. Take your time.",</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"I respect how you feel.",</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"Whatever you choose, I wish you well.",</p>
-<p class="p1"><span class="Apple-converted-space">      </span>"Thank you for being honest."</p>
-<p class="p1"><span class="Apple-converted-space">    </span>];</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>noBtn.addEventListener("mouseover", () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const x = Math.random() * 240;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const y = Math.random() * 100;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>noBtn.style.left = x + "px";</p>
-<p class="p1"><span class="Apple-converted-space">      </span>noBtn.style.top = y + "px";</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>const randomMsg = messages[Math.floor(Math.random() * messages.length)];</p>
-<p class="p1"><span class="Apple-converted-space">      </span>msg.textContent = randomMsg;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>function yesClicked() {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>document.body.innerHTML = `</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div style="</p>
-<p class="p1"><span class="Apple-converted-space">          </span>height:100vh;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>display:flex;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>flex-direction:column;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>justify-content:center;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>align-items:center;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>background:linear-gradient(135deg,#cfd9df,#e2ebf0);</p>
-<p class="p1"><span class="Apple-converted-space">          </span>text-align:center;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>font-family:Arial;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h1&gt;Thank you 🤍&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p style="max-width:400px;color:#555;"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>I know rebuilding takes time.&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>No expectations, no pressure.&lt;br&gt;&lt;br&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>I’m just glad we can try again.</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>`;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
-<p class="p2"><br></p>
+  <div class="box">
+    <h1>Hey.</h1>
+
+    <p>
+      I know things didn’t end well.<br />
+      I’m not here to force anything.<br /><br />
+      I just wanted to ask honestly…
+    </p>
+
+    <h2>Can we be friends again? 🌱</h2>
+
+    <div class="buttons">
+      <button id="yes" onclick="yesClicked()">Yes</button>
+      <button id="no">No</button>
+    </div>
+
+    <div id="message"></div>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById("no");
+    const msg = document.getElementById("message");
+
+    const messages = [
+      "It’s okay. I understand.",
+      "No pressure. Take your time.",
+      "I respect how you feel.",
+      "Whatever you choose, I wish you well.",
+      "Thank you for being honest."
+    ];
+
+    noBtn.addEventListener("mouseover", () => {
+      const x = Math.random() * 240;
+      const y = Math.random() * 100;
+      noBtn.style.left = x + "px";
+      noBtn.style.top = y + "px";
+
+      msg.textContent =
+        messages[Math.floor(Math.random() * messages.length)];
+    });
+
+    function yesClicked() {
+      document.body.innerHTML = `
+        <div style="
+          height:100vh;
+          display:flex;
+          flex-direction:column;
+          justify-content:center;
+          align-items:center;
+          background:linear-gradient(135deg,#cfd9df,#e2ebf0);
+          text-align:center;
+          font-family:Arial;">
+          <h1>Thank you 🤍</h1>
+          <p style="max-width:400px;color:#555;">
+            I know rebuilding takes time.<br>
+            No expectations, no pressure.<br><br>
+            I’m just glad we can try again.
+          </p>
+        </div>
+      `;
+    }
+  </script>
 </body>
 </html>
